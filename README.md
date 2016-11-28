@@ -18,3 +18,8 @@
 ## v1.1:
 * 15 Character limit
 * Uppercase letter support
+* Added an error message 
+
+## v1.2:
+* Added support for exclamation marks and question marks
+* Changed the design of the title 
