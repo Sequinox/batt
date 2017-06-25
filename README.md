@@ -3,12 +3,11 @@
 ---
 
 # Current Features:
-* Simple 10 character text conversion
+* Limitless letter to emoji conversion
 * A nice "Copy Text" button
 
 # To-Do:
-* -Increase character limit. End goal is 90 characters.
-* -Add support for other emojis such as punctuation and numbers.
+* -Add support for more emojis.
 
 # Changelog:
 
@@ -23,3 +22,8 @@
 ## v1.2:
 * Added support for exclamation marks and question marks
 * Changed the design of the title 
+
+## v1.3
+* No more character limit!
+* Super duper optimization. BATT now does even more using 194 lines as opposed to the 2568 lines that the previous versions had. (Ew.)
+* Icon change. 
