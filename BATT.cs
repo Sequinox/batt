@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BATT_Rewritten
 {
-    public partial class Form1 : Form
+    public partial class BATT : Form
     {
-        public Form1()
+        public BATT()
         {
             InitializeComponent();
         }
@@ -23,110 +23,84 @@ namespace BATT_Rewritten
         }
         public string Translate(char c)
         {
-            string output = "nope";
+            string output;
             switch (c)
             {
-                case 'A':
                 case 'a':
                     output = ":regional_indicator_a:";
                     break;
-                case 'B':
                 case 'b':
                     output = ":regional_indicator_b:";
                     break;
-                case 'C':
                 case 'c':
                     output = ":regional_indicator_c:";
                     break;
-                case 'D':
                 case 'd':
                     output = ":regional_indicator_d:";
                     break;
-                case 'E':
                 case 'e':
                     output = ":regional_indicator_e:";
                     break;
-                case 'F':
                 case 'f':
                     output = ":regional_indicator_f:";
                     break;
-                case 'G':
                 case 'g':
                     output = ":regional_indicator_g:";
                     break;
-                case 'H':
                 case 'h':
                     output = ":regional_indicator_h:";
                     break;
-                case 'I':
                 case 'i':
                     output = ":regional_indicator_i:";
                     break;
-                case 'J':
                 case 'j':
                     output = ":regional_indicator_j:";
                     break;
-                case 'K':
                 case 'k':
                     output = ":regional_indicator_k:";
                     break;
-                case 'L':
                 case 'l':
                     output = ":regional_indicator_l:";
                     break;
-                case 'M':
                 case 'm':
                     output = ":regional_indicator_m:";
                     break;
-                case 'N':
                 case 'n':
                     output = ":regional_indicator_n:";
                     break;
-                case 'O':
                 case 'o':
                     output = ":regional_indicator_o:";
                     break;
-                case 'P':
                 case 'p':
                     output = ":regional_indicator_p:";
                     break;
-                case 'Q':
                 case 'q':
                     output = ":regional_indicator_q:";
                     break;
-                case 'R':
                 case 'r':
                     output = ":regional_indicator_r:";
                     break;
-                case 'S':
                 case 's':
                     output = ":regional_indicator_s:";
                     break;
-                case 'T':
                 case 't':
                     output = ":regional_indicator_t:";
                     break;
-                case 'U':
                 case 'u':
                     output = ":regional_indicator_u:";
                     break;
-                case 'V':
                 case 'v':
                     output = ":regional_indicator_v:";
                     break;
-                case 'W':
                 case 'w':
                     output = ":regional_indicator_w:";
                     break;
-                case 'X':
                 case 'x':
                     output = ":regional_indicator_x:";
                     break;
-                case 'Y':
                 case 'y':
                     output = ":regional_indicator_y:";
                     break;
-                case 'Z':
                 case 'z':
                     output = ":regional_indicator_z:";
                     break;
@@ -175,9 +149,9 @@ namespace BATT_Rewritten
 
         private void translateButton_Click(object sender, EventArgs e)
         {
-            string input = inputBox.Text;
+            string input = inputBox.Text.ToLower();
             string output = "";
-            Form1 t = new BATT_Rewritten.Form1();
+            BATT t = new BATT();
             foreach (char c in input)
             {
                 string nextEmoji = t.Translate(c);
