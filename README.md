@@ -27,3 +27,7 @@
 * No more character limit!
 * Super duper optimization. BATT now does even more using 194 lines as opposed to the 2568 lines that the previous versions had. (Ew.)
 * Icon change. 
+
+## 1.3.1:
+* Continuing to reduce the size of the program. 194 lines -> 168 lines. :)
+* Renamed all instances of "Form1" in the code to BATT.
